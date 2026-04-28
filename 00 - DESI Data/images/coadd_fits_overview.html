@@ -1,0 +1,117 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:20px 16px 24px;display:flex;flex-direction:column;gap:10px}
+.file-label{font-size:11px;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;color:var(--color-text-tertiary);padding:0 2px}
+.file-box{border:1.5px solid var(--color-border-secondary);border-radius:var(--border-radius-lg);padding:16px;display:flex;flex-direction:column;gap:8px}
+.filename{font-family:var(--font-mono);font-size:11px;color:var(--color-text-secondary);margin-bottom:2px}
+.hdu-row{display:flex;gap:8px}
+.hdu{flex:1;border-radius:var(--border-radius-md);padding:11px 12px 10px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.hdu-name{font-size:13px;font-weight:500}
+.hdu-meta{font-size:10px;margin-top:1px}
+.hdu-desc{font-size:11px;margin-top:4px;line-height:1.5}
+.divider{height:0.5px;background:var(--color-border-tertiary);margin:2px 0}
+.cam-row{display:flex;gap:6px;margin-top:6px}
+.cam-chip{flex:1;border-radius:6px;padding:7px 9px;min-width:0}
+.cn{font-size:11px;font-weight:500}
+.cs{font-size:10px;margin-top:2px}
+.spec-arrays{font-size:10px;margin-top:6px}
+.note{font-size:11px;color:var(--color-text-tertiary);padding:8px 10px;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);line-height:1.5}
+
+.h-primary{background:#F1EFE8;border:0.5px solid #B4B2A9}
+.h-primary .hdu-name{color:#2C2C2A}
+.h-primary .hdu-meta{color:#888780}
+.h-primary .hdu-desc{color:#444441}
+
+.h-purple{background:#EEEDFE;border:0.5px solid #AFA9EC}
+.h-purple .hdu-name{color:#26215C}
+.h-purple .hdu-meta{color:#7F77DD}
+.h-purple .hdu-desc{color:#3C3489}
+
+.h-spec{background:#E1F5EE;border:0.5px solid #9FE1CB}
+.h-spec .hdu-name{color:#04342C}
+.h-spec .hdu-meta{color:#1D9E75}
+.h-spec .hdu-desc{color:#085041}
+.h-spec .spec-arrays{color:#0F6E56}
+
+.h-scores{background:#FAEEDA;border:0.5px solid #FAC775}
+.h-scores .hdu-name{color:#412402}
+.h-scores .hdu-meta{color:#BA7517}
+.h-scores .hdu-desc{color:#633806}
+
+.cc-b{background:#E6F1FB;border:0.5px solid #85B7EB}
+.cc-b .cn{color:#042C53}
+.cc-b .cs{color:#185FA5}
+
+.cc-r{background:#FAECE7;border:0.5px solid #F0997B}
+.cc-r .cn{color:#4A1B0C}
+.cc-r .cs{color:#993C1D}
+
+.cc-z{background:#FBEAF0;border:0.5px solid #ED93B1}
+.cc-z .cn{color:#4B1528}
+.cc-z .cs{color:#993556}
+</style>
+<div class="wrap">
+  <div class="file-label">FITS file structure</div>
+  <div class="file-box">
+    <div class="filename">coadd-main-dark-0.fits · 19 HDUs · 1704 targets</div>
+
+    <div class="hdu-row">
+      <div class="hdu h-primary">
+        <div class="hdu-name">PRIMARY</div>
+        <div class="hdu-meta">HDU 0 · no data arrays</div>
+        <div class="hdu-desc">Pipeline configuration and instrument metadata. 157 header cards.</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="hdu-row">
+      <div class="hdu h-purple">
+        <div class="hdu-name">FIBERMAP</div>
+        <div class="hdu-meta">HDU 1 · 1704 rows × 67 columns</div>
+        <div class="hdu-desc">One row per coadded target. Contains sky coordinates, imaging photometry, morphology, targeting flags, Gaia crossmatch identifiers, and coadd summary statistics.</div>
+      </div>
+      <div class="hdu h-purple">
+        <div class="hdu-name">EXP_FIBERMAP</div>
+        <div class="hdu-meta">HDU 2 · 2356 rows × 26 columns</div>
+        <div class="hdu-desc">One row per exposure per fiber. Contains per-exposure timestamps (MJD), exposure times, tile and fiber identifiers, and fiber positioning measurements.</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="hdu h-spec">
+      <div class="hdu-name">Spectral HDUs</div>
+      <div class="hdu-meta">HDUs 3–17 · five HDUs per camera · 1704 targets each</div>
+      <div class="hdu-desc">DESI's spectrograph splits incoming light into three wavelength ranges using dichroic mirrors. Each produces five HDUs at the same level in the file — wavelength grid, flux, inverse variance, pixel mask, and resolution matrix.</div>
+      <div class="cam-row">
+        <div class="cam-chip cc-b">
+          <div class="cn">B · blue</div>
+          <div class="cs">3600–5800 Å · 2751 bins</div>
+        </div>
+        <div class="cam-chip cc-r">
+          <div class="cn">R · red</div>
+          <div class="cs">5760–7620 Å · 2326 bins</div>
+        </div>
+        <div class="cam-chip cc-z">
+          <div class="cn">Z · near-infrared</div>
+          <div class="cs">7520–9824 Å · 2881 bins</div>
+        </div>
+      </div>
+      <div class="spec-arrays">Arrays: {B,R,Z}_WAVELENGTH · {B,R,Z}_FLUX · {B,R,Z}_IVAR · {B,R,Z}_MASK · {B,R,Z}_RESOLUTION</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="hdu-row">
+      <div class="hdu h-scores">
+        <div class="hdu-name">SCORES</div>
+        <div class="hdu-meta">HDU 18 · 1704 rows × 42 columns</div>
+        <div class="hdu-desc">Per-target signal-to-noise and spectral quality metrics across all three cameras.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note">FIBERMAP, the spectral arrays, and SCORES all share the same 1704-target row axis — each row index refers to the same fiber across all science HDUs.</div>
+</div>
