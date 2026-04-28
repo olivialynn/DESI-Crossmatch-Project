@@ -1,21 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;background:#ffffff}
 .wrap{padding:20px 16px 24px;display:flex;flex-direction:column;gap:10px}
-.file-label{font-size:11px;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;color:var(--color-text-tertiary);padding:0 2px}
-.file-box{border:1.5px solid var(--color-border-secondary);border-radius:var(--border-radius-lg);padding:16px;display:flex;flex-direction:column;gap:8px}
-.filename{font-family:var(--font-mono);font-size:11px;color:var(--color-text-secondary);margin-bottom:2px}
+.file-label{font-size:11px;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;color:#888780;padding:0 2px}
+.file-box{border:1.5px solid #D3D1C7;border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.filename{font-family:monospace;font-size:11px;color:#5F5E5A;margin-bottom:2px}
 .hdu-row{display:flex;gap:8px}
-.hdu{flex:1;border-radius:var(--border-radius-md);padding:11px 12px 10px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.hdu{flex:1;border-radius:8px;padding:11px 12px 10px;display:flex;flex-direction:column;gap:3px;min-width:0}
 .hdu-name{font-size:13px;font-weight:500}
 .hdu-meta{font-size:10px;margin-top:1px}
 .hdu-desc{font-size:11px;margin-top:4px;line-height:1.5}
-.divider{height:0.5px;background:var(--color-border-tertiary);margin:2px 0}
+.divider{height:0.5px;background:#E8E6DF;margin:2px 0}
 .cam-row{display:flex;gap:6px;margin-top:6px}
 .cam-chip{flex:1;border-radius:6px;padding:7px 9px;min-width:0}
 .cn{font-size:11px;font-weight:500}
 .cs{font-size:10px;margin-top:2px}
 .spec-arrays{font-size:10px;margin-top:6px}
-.note{font-size:11px;color:var(--color-text-tertiary);padding:8px 10px;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);line-height:1.5}
+.note{font-size:11px;color:#888780;padding:8px 10px;border:0.5px solid #D3D1C7;border-radius:8px;line-height:1.5}
 
 .h-primary{background:#F1EFE8;border:0.5px solid #B4B2A9}
 .h-primary .hdu-name{color:#2C2C2A}
@@ -50,6 +55,8 @@
 .cc-z .cn{color:#4B1528}
 .cc-z .cs{color:#993556}
 </style>
+</head>
+<body>
 <div class="wrap">
   <div class="file-label">FITS file structure</div>
   <div class="file-box">
@@ -115,3 +122,5 @@
 
   <div class="note">FIBERMAP, the spectral arrays, and SCORES all share the same 1704-target row axis — each row index refers to the same fiber across all science HDUs.</div>
 </div>
+</body>
+</html>
