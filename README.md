@@ -770,7 +770,7 @@
 2 rows x 51 columns
 
 ## 03b - DESI x Rubin DP1 dia object
-- A 534M catalog called `desi_x_lsst_dp1_dia_object` at `/global/cfs/cdirs/cosmo/users/olynn/`
+- A 27M catalog called `desi_x_lsst_dp1_dia_object` at `/global/cfs/cdirs/cosmo/users/olynn/`
   - a crossmatch of DESI Main Survey (dark program) DR1 with LSST DP1 dia object
 - MOC is fairly tiny here as well
 - An interactive Dask Performance Report is available [here](https://olivialynn.github.io/DESI-Crossmatch-Project/03%20-%20DESI%20x%20LSST%20DP1/crossmatch_report_obj.html), 
