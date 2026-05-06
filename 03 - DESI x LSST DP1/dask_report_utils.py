@@ -8,17 +8,17 @@ def _parse_report(filepath):
     with open(filepath, "r") as f:
         soup = BeautifulSoup(f.read(), "html.parser")
 
-    scripts = soup.find_all("script")
-    for s in scripts:
-        if s.string and "json" in s.string:
-            match = re.search(r'({.*})', s.string, re.DOTALL)
-            if match:
-                data = json.loads(match.group(1))
-                uuid = list(data.keys())[0]
-                tabs = data[uuid]['roots'][0]['attributes']['tabs']
-                for tab in tabs:
-                    if tab['attributes'].get('title') == 'Summary':
-                        return tab['attributes']['child']['attributes']['text']
+    for s in soup.find_all("script", type="application/json"):
+        try:
+            data = json.loads(s.string)
+            uuid = list(data.keys())[0]
+            tabs = data[uuid]['roots'][0]['attributes']['tabs']
+            for tab in tabs:
+                if tab['attributes'].get('title') == 'Summary':
+                    return tab['attributes']['child']['attributes']['text']
+        except (json.JSONDecodeError, KeyError):
+            continue
+
     raise ValueError("Could not find Summary tab in report.")
 
 
