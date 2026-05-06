@@ -1,6 +1,8 @@
 *Interactive Dask performance report quick links:*
 - [02 - DESI x Gaia](https://olivialynn.github.io/DESI-Crossmatch-Project/02%20-%20DESI%20x%20Gaia/crossmatch_report.html)
-- 03 (in progress)
+- [03 - DESI x LSST DP1 (object, dia_object)](https://olivialynn.github.io/DESI-Crossmatch-Project/03%20-%20DESI%20x%20LSST%20DP1/crossmatch_report.html)
+- 04 (in progress)
+- 05 (in progress)
 
 ---
 
