@@ -203,6 +203,9 @@
 ## 02 - DESI x Gaia
 - A 71 GiB catalog called `desi_x_gaia` at `/global/cfs/cdirs/cosmo/users/olynn/`
   - a crossmatch of DESI Main Survey (dark program) DR1 with Gaia DR3
+- A call to `is_valid_catalog` returns True,
+  - with `5764` partitions found
+  - and `Approximate coverage is 33.38 % of the sky.`
 - MOC appears functionally identical to the MOC included in the section above, "01 - DESI Data"
 - An interactive Dask Performance Report is available [here](https://olivialynn.github.io/DESI-Crossmatch-Project/02%20-%20DESI%20x%20Gaia/crossmatch_report.html)
 
@@ -401,6 +404,9 @@
 ## 03a - DESI x Rubin DP1 object
 - A 534M catalog called `desi_x_lsst_dp1_object` at `/global/cfs/cdirs/cosmo/users/olynn/`
   - a crossmatch of DESI Main Survey (dark program) DR1 with LSST DP1 object
+- A call to `is_valid_catalog` returns True,
+  - with `60` partitions found
+  - and `Approximate coverage is 0.01 % of the sky.`
 - MOC is fairly tiny, which is unsurprising, as dp1 obj is a few scattered blobs mostly in the southern hemisphere (and DESI is mostly northern)
 - An interactive Dask Performance Report is available [here](https://olivialynn.github.io/DESI-Crossmatch-Project/03%20-%20DESI%20x%20LSST%20DP1/crossmatch_report_obj.html), 
   - and key metrics are described and analyzed at the bottom of the [section notebook](https://github.com/olivialynn/DESI-Crossmatch-Project/blob/main/03%20-%20DESI%20x%20LSST%20DP1/3.0%20-%20DESI%20x%20DP1.ipynb)
@@ -772,6 +778,9 @@
 ## 03b - DESI x Rubin DP1 dia object
 - A 27M catalog called `desi_x_lsst_dp1_dia_object` at `/global/cfs/cdirs/cosmo/users/olynn/`
   - a crossmatch of DESI Main Survey (dark program) DR1 with LSST DP1 dia object
+- A call to `is_valid_catalog` returns True,
+  - with `7` partitions found
+  - and `Approximate coverage is 0.01 % of the sky.`
 - MOC is fairly tiny here as well
 - An interactive Dask Performance Report is available [here](https://olivialynn.github.io/DESI-Crossmatch-Project/03%20-%20DESI%20x%20LSST%20DP1/crossmatch_report_obj.html), 
   - and key metrics are described and analyzed at the bottom of the [section notebook](https://github.com/olivialynn/DESI-Crossmatch-Project/blob/main/03%20-%20DESI%20x%20LSST%20DP1/3.0%20-%20DESI%20x%20DP1.ipynb)
@@ -974,6 +983,9 @@ Appears the same as the MOC above
 ## 04 - DESI DR1 x DESI Legacy
 - A 561G GiB catalog called `desi_dr1_x_desi_legacy` at `/global/cfs/cdirs/cosmo/users/olynn/`
   - a crossmatch of DESI Main Survey (dark program) DR1 with DESI Legacy Survey DR 10.1
+- A call to `is_valid_catalog` returns True,
+  - with `19,221` partitions found
+  - and `Approximate coverage is 21.77 % of the sky.`
 - An interactive Dask Performance Report is available [here](https://olivialynn.github.io/DESI-Crossmatch-Project/04%20-%20DESI%20DR1%20x%20DESI%20Legacy/crossmatch_report.html), 
   - and key metrics are described and analyzed at the bottom of the [section notebook](https://github.com/olivialynn/DESI-Crossmatch-Project/blob/main/04%20-%20DESI%20DR1%20x%20DESI%20Legacy/4.0%20-%20DESI%20DR1%20x%20DESI%20Legacy.ipynb)
 
