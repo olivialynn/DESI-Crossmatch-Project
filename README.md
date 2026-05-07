@@ -209,6 +209,9 @@
 - MOC appears functionally identical to the MOC included in the section above, "01 - DESI Data"
 - An interactive Dask Performance Report is available [here](https://olivialynn.github.io/DESI-Crossmatch-Project/02%20-%20DESI%20x%20Gaia/crossmatch_report.html)
 
+### MOC
+Appears very similar to the MOC above
+
 ### First 2 rows
 <table id="T_0b2e5">
   <thead>
@@ -786,7 +789,7 @@
   - and key metrics are described and analyzed at the bottom of the [section notebook](https://github.com/olivialynn/DESI-Crossmatch-Project/blob/main/03%20-%20DESI%20x%20LSST%20DP1/3.0%20-%20DESI%20x%20DP1.ipynb)
 
 ### MOC
-Appears the same as the MOC above
+Appears very similar to the MOC above
 
 ### First 2 rows
 <table id="T_e1d28">
