@@ -1568,3 +1568,319 @@ Appears very similar to the MOC above
 </table>
 2 rows x 139 columns
 
+## 05a - DESI x LSST DP2 dia_object
+- A 7.3 GiB catalog called `desi_x_lsst_dp2_dia_obj` at ` /sdf/home/o/olynn/catalogs/` → NOTE: Looking to move this to the shared space at `/sdf/data/rubin/cosmicdata/lsdb` once I'm added to the sdf-rubin-cosmic` group
+  - a crossmatch of DESI Main Survey (dark program) DR1 with LSST DP2 dia_object (DP2 v30_0_6 dia_object_collection; accessed May 29)
+- A call to `is_valid_catalog` returns True,
+  - with `2125` partitions found
+  - and `Approximate coverage is 3.85% of the sky.`
+- An interactive Dask Performance Report is available [here](https://olivialynn.github.io/DESI-Crossmatch-Project/05%20-%20DESI%20x%20LSST%20DP2/crossmatch_report_dia_obj.html)
+  - and key metrics are described and analyzed at the bottom of the [section notebook](https://github.com/olivialynn/DESI-Crossmatch-Project/blob/main/05%20-%20DESI%20x%20LSST%20DP2/5.0%20-%20DESI%20x%20LSST%20DP2.ipynb)
+
+
+
+### MOC
+<img width="791" height="444" alt="Image" src="https://github.com/user-attachments/assets/aa798ab4-52ab-485a-a1a1-e9e76e1af332" />
+
+
+### First 2 rows
+<table id="T_9c0d7">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_9c0d7_level0_col0" class="col_heading level0 col0" >TARGETID</th>
+      <th id="T_9c0d7_level0_col1" class="col_heading level0 col1" >TARGET_RA</th>
+      <th id="T_9c0d7_level0_col2" class="col_heading level0 col2" >TARGET_DEC</th>
+      <th id="T_9c0d7_level0_col3" class="col_heading level0 col3" >Z</th>
+      <th id="T_9c0d7_level0_col4" class="col_heading level0 col4" >ZERR</th>
+      <th id="T_9c0d7_level0_col5" class="col_heading level0 col5" >spectra_b</th>
+      <th id="T_9c0d7_level0_col6" class="col_heading level0 col6" >spectra_r</th>
+      <th id="T_9c0d7_level0_col7" class="col_heading level0 col7" >spectra_z</th>
+      <th id="T_9c0d7_level0_col8" class="col_heading level0 col8" >dec</th>
+      <th id="T_9c0d7_level0_col9" class="col_heading level0 col9" >diaObjectId</th>
+      <th id="T_9c0d7_level0_col10" class="col_heading level0 col10" >nDiaSources</th>
+      <th id="T_9c0d7_level0_col11" class="col_heading level0 col11" >ra</th>
+      <th id="T_9c0d7_level0_col12" class="col_heading level0 col12" >tract</th>
+      <th id="T_9c0d7_level0_col13" class="col_heading level0 col13" >diaObjectForcedSource</th>
+      <th id="T_9c0d7_level0_col14" class="col_heading level0 col14" >diaSource</th>
+      <th id="T_9c0d7_level0_col15" class="col_heading level0 col15" >_dist_arcsec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_9c0d7_level0_row0" class="row_heading level0 row0" >1203863513569649040</th>
+      <td id="T_9c0d7_row0_col0" class="data row0 col0" >39627437792825537</td>
+      <td id="T_9c0d7_row0_col1" class="data row0 col1" >351.428181</td>
+      <td id="T_9c0d7_row0_col2" class="data row0 col2" >-14.683122</td>
+      <td id="T_9c0d7_row0_col3" class="data row0 col3" >1.368533</td>
+      <td id="T_9c0d7_row0_col4" class="data row0 col4" >0.000138</td>
+      <td id="T_9c0d7_row0_col5" class="data row0 col5" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3600.0</td>
+      <td>5.040675</td>
+      <td>0.103488</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2750 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row0_col6" class="data row0 col6" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5760.0</td>
+      <td>4.024427</td>
+      <td>0.179777</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2325 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row0_col7" class="data row0 col7" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7520.0</td>
+      <td>0.567026</td>
+      <td>2.449597</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2880 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row0_col8" class="data row0 col8" >-14.683135</td>
+      <td id="T_9c0d7_row0_col9" class="data row0 col9" >770721298467782915</td>
+      <td id="T_9c0d7_row0_col10" class="data row0 col10" >1</td>
+      <td id="T_9c0d7_row0_col11" class="data row0 col11" >351.428182</td>
+      <td id="T_9c0d7_row0_col12" class="data row0 col12" >7297</td>
+      <td id="T_9c0d7_row0_col13" class="data row0 col13" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>band</th>
+      <th>coord_dec</th>
+      <th>...</th>
+      <th>psfMagErr</th>
+      <th>visit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td>-14.683135</td>
+      <td>...</td>
+      <td>0.158163</td>
+      <td>2025070100656</td>
+    </tr>
+    <tr>
+      <td><i>+35 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row0_col14" class="data row0 col14" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>band</th>
+      <th>centroid_flag</th>
+      <th>...</th>
+      <th>y</th>
+      <th>yErr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>g</td>
+      <td>False</td>
+      <td>...</td>
+      <td>923.079074</td>
+      <td>0.253312</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row0_col15" class="data row0 col15" >0.045792</td>
+    </tr>
+    <tr>
+      <th id="T_9c0d7_level0_row1" class="row_heading level0 row1" >1203863976572888979</th>
+      <td id="T_9c0d7_row1_col0" class="data row1 col0" >39627437792823928</td>
+      <td id="T_9c0d7_row1_col1" class="data row1 col1" >351.350538</td>
+      <td id="T_9c0d7_row1_col2" class="data row1 col2" >-14.676350</td>
+      <td id="T_9c0d7_row1_col3" class="data row1 col3" >0.146449</td>
+      <td id="T_9c0d7_row1_col4" class="data row1 col4" >0.000004</td>
+      <td id="T_9c0d7_row1_col5" class="data row1 col5" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3600.0</td>
+      <td>64.870834</td>
+      <td>0.039033</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2750 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row1_col6" class="data row1 col6" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5760.0</td>
+      <td>36.507702</td>
+      <td>0.079193</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2325 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row1_col7" class="data row1 col7" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7520.0</td>
+      <td>187.865128</td>
+      <td>0.029783</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2880 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row1_col8" class="data row1 col8" >-14.676350</td>
+      <td id="T_9c0d7_row1_col9" class="data row1 col9" >770721367187259405</td>
+      <td id="T_9c0d7_row1_col10" class="data row1 col10" >28</td>
+      <td id="T_9c0d7_row1_col11" class="data row1 col11" >351.350518</td>
+      <td id="T_9c0d7_row1_col12" class="data row1 col12" >7297</td>
+      <td id="T_9c0d7_row1_col13" class="data row1 col13" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>band</th>
+      <th>coord_dec</th>
+      <th>...</th>
+      <th>psfMagErr</th>
+      <th>visit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td>-14.67635</td>
+      <td>...</td>
+      <td>0.002871</td>
+      <td>2025070100656</td>
+    </tr>
+    <tr>
+      <td><i>+34 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row1_col14" class="data row1 col14" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>band</th>
+      <th>centroid_flag</th>
+      <th>...</th>
+      <th>y</th>
+      <th>yErr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td>False</td>
+      <td>...</td>
+      <td>2971.985481</td>
+      <td>0.22065</td>
+    </tr>
+    <tr>
+      <td><i>+27 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_9c0d7_row1_col15" class="data row1 col15" >0.071685</td>
+    </tr>
+  </tbody>
+</table>
+2 rows x 16 columns
+
