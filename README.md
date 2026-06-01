@@ -9,7 +9,7 @@
 ---
 
 ## 01 - DESI Data
-- A 700GiB catalog called `desi-dr1-main-dark` at `/global/cfs/cdirs/cosmo/users/olynn/`
+- A 700GiB catalog called `desi-dr1-main-dark` at `/global/cfs/cdirs/cosmo/www/users/olynn/`
   - covers DESI's **main** survey, **dark** program
 - A call to `is_valid_catalog` returns True, 
   - with `5769 partitions` found 
