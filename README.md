@@ -1,10 +1,12 @@
 *Interactive Dask performance report quick links:*
 - [02 - DESI x Gaia](https://olivialynn.github.io/DESI-Crossmatch-Project/02%20-%20DESI%20x%20Gaia/crossmatch_report.html)
 - 03 - DESI x LSST DP1
-  - [03 - DESI x LSST DP1 object](https://olivialynn.github.io/DESI-Crossmatch-Project/03%20-%20DESI%20x%20LSST%20DP1/crossmatch_report_obj.html)
   - [03 - DESI x LSST DP1 dia_object](https://olivialynn.github.io/DESI-Crossmatch-Project/03%20-%20DESI%20x%20LSST%20DP1/crossmatch_report_dia_obj.html)
+  - [03 - DESI x LSST DP1 object](https://olivialynn.github.io/DESI-Crossmatch-Project/03%20-%20DESI%20x%20LSST%20DP1/crossmatch_report_obj.html)
 - [04 - DESI DR1 x DESI Legacy](https://olivialynn.github.io/DESI-Crossmatch-Project/04%20-%20DESI%20DR1%20x%20DESI%20Legacy/crossmatch_report.html)
-- 05 (in progress)
+- 05 - DESI x LSST DP2
+  - [03 - DESI x LSST DP2 dia object](https://olivialynn.github.io/DESI-Crossmatch-Project/05%20-%20DESI%20x%20LSST%20DP2/crossmatch_report_dia_obj.html)
+  - [03 - DESI x LSST DP2 object](https://olivialynn.github.io/DESI-Crossmatch-Project/05%20-%20DESI%20x%20LSST%20DP2/crossmatch_report_object.html)
 
 ---
 
@@ -1884,3 +1886,213 @@ Appears very similar to the MOC above
 </table>
 2 rows x 16 columns
 
+
+## 05b - DESI x LSST DP2 object
+- A 94 GiB catalog called `desi_x_lsst_dp2_object` at `/sdf/data/rubin/user/olynn/`
+  - a crossmatch of DESI Main Survey (dark program) DR1 with LSST DP2 object (DP2 v30_0_6 object_collection; accessed June 1)
+- A call to `is_valid_catalog` returns True,
+  - with `24553` partitions found
+  - and `Approximate coverage is 3.57 % of the sky.`
+- An interactive Dask Performance Report is available [here](https://olivialynn.github.io/DESI-Crossmatch-Project/05%20-%20DESI%20x%20LSST%20DP2/crossmatch_report_object.html)
+  - and key metrics are described and analyzed at the bottom of the [section notebook](https://github.com/olivialynn/DESI-Crossmatch-Project/blob/main/05%20-%20DESI%20x%20LSST%20DP2/5.0%20-%20DESI%20x%20LSST%20DP2.ipynb)
+
+### MOC
+<img width="945" height="510" alt="Image" src="https://github.com/user-attachments/assets/06c0c298-babc-405d-b572-89bfeb98011b" />
+
+### First 2 rows
+<table id="T_ff59c">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_ff59c_level0_col0" class="col_heading level0 col0" >TARGETID</th>
+      <th id="T_ff59c_level0_col1" class="col_heading level0 col1" >TARGET_RA</th>
+      <th id="T_ff59c_level0_col2" class="col_heading level0 col2" >TARGET_DEC</th>
+      <th id="T_ff59c_level0_col3" class="col_heading level0 col3" >Z</th>
+      <th id="T_ff59c_level0_col4" class="col_heading level0 col4" >ZERR</th>
+      <th id="T_ff59c_level0_col5" class="col_heading level0 col5" >spectra_b</th>
+      <th id="T_ff59c_level0_col6" class="col_heading level0 col6" >spectra_r</th>
+      <th id="T_ff59c_level0_col7" class="col_heading level0 col7" >spectra_z</th>
+      <th id="T_ff59c_level0_col8" class="col_heading level0 col8" >objectId</th>
+      <th id="T_ff59c_level0_col9" class="col_heading level0 col9" >coord_ra</th>
+      <th id="T_ff59c_level0_col10" class="col_heading level0 col10" >coord_dec</th>
+      <th id="T_ff59c_level0_col11" class="col_heading level0 col11" >r_psfMag</th>
+      <th id="T_ff59c_level0_col12" class="col_heading level0 col12" >r_psfMagErr</th>
+      <th id="T_ff59c_level0_col13" class="col_heading level0 col13" >_dist_arcsec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_ff59c_level0_row0" class="row_heading level0 row0" >47991521810220274</th>
+      <td id="T_ff59c_row0_col0" class="data row0 col0" >39628230637916670</td>
+      <td id="T_ff59c_row0_col1" class="data row0 col1" >23.190178</td>
+      <td id="T_ff59c_row0_col2" class="data row0 col2" >18.856721</td>
+      <td id="T_ff59c_row0_col3" class="data row0 col3" >1.489172</td>
+      <td id="T_ff59c_row0_col4" class="data row0 col4" >0.000865</td>
+      <td id="T_ff59c_row0_col5" class="data row0 col5" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3600.0</td>
+      <td>0.002376</td>
+      <td>0.045902</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2750 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_ff59c_row0_col6" class="data row0 col6" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5760.0</td>
+      <td>0.180997</td>
+      <td>2.603897</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2325 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_ff59c_row0_col7" class="data row0 col7" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7520.0</td>
+      <td>0.920303</td>
+      <td>8.82909</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2880 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_ff59c_row0_col8" class="data row0 col8" >805469645476725267</td>
+      <td id="T_ff59c_row0_col9" class="data row0 col9" >23.190189</td>
+      <td id="T_ff59c_row0_col10" class="data row0 col10" >18.856733</td>
+      <td id="T_ff59c_row0_col11" class="data row0 col11" ><NA></td>
+      <td id="T_ff59c_row0_col12" class="data row0 col12" ><NA></td>
+      <td id="T_ff59c_row0_col13" class="data row0 col13" >0.058550</td>
+    </tr>
+    <tr>
+      <th id="T_ff59c_level0_row1" class="row_heading level0 row1" >47992039361544743</th>
+      <td id="T_ff59c_row1_col0" class="data row1 col0" >39628236367335481</td>
+      <td id="T_ff59c_row1_col1" class="data row1 col1" >23.165036</td>
+      <td id="T_ff59c_row1_col2" class="data row1 col2" >18.888546</td>
+      <td id="T_ff59c_row1_col3" class="data row1 col3" >0.880572</td>
+      <td id="T_ff59c_row1_col4" class="data row1 col4" >0.000065</td>
+      <td id="T_ff59c_row1_col5" class="data row1 col5" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3600.0</td>
+      <td>0.322199</td>
+      <td>0.234359</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2750 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_ff59c_row1_col6" class="data row1 col6" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5760.0</td>
+      <td>7.639961</td>
+      <td>0.089456</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2325 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_ff59c_row1_col7" class="data row1 col7" ><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>wavelength</th>
+      <th>flux</th>
+      <th>ivar</th>
+      <th>mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7520.0</td>
+      <td>-0.006492</td>
+      <td>18.115849</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><i>+2880 rows</i></td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table></td>
+      <td id="T_ff59c_row1_col8" class="data row1 col8" >805469645476725414</td>
+      <td id="T_ff59c_row1_col9" class="data row1 col9" >23.165003</td>
+      <td id="T_ff59c_row1_col10" class="data row1 col10" >18.888799</td>
+      <td id="T_ff59c_row1_col11" class="data row1 col11" ><NA></td>
+      <td id="T_ff59c_row1_col12" class="data row1 col12" ><NA></td>
+      <td id="T_ff59c_row1_col13" class="data row1 col13" >0.919738</td>
+    </tr>
+  </tbody>
+</table>
+2 rows x 14 columns
