@@ -5,8 +5,8 @@
   - [03 - DESI x LSST DP1 object](https://olivialynn.github.io/DESI-Crossmatch-Project/03%20-%20DESI%20x%20LSST%20DP1/crossmatch_report_obj.html)
 - [04 - DESI DR1 x DESI Legacy](https://olivialynn.github.io/DESI-Crossmatch-Project/04%20-%20DESI%20DR1%20x%20DESI%20Legacy/crossmatch_report.html)
 - 05 - DESI x LSST DP2
-  - [03 - DESI x LSST DP2 dia object](https://olivialynn.github.io/DESI-Crossmatch-Project/05%20-%20DESI%20x%20LSST%20DP2/crossmatch_report_dia_obj.html)
-  - [03 - DESI x LSST DP2 object](https://olivialynn.github.io/DESI-Crossmatch-Project/05%20-%20DESI%20x%20LSST%20DP2/crossmatch_report_object.html)
+  - [05a - DESI x LSST DP2 dia object](https://olivialynn.github.io/DESI-Crossmatch-Project/05%20-%20DESI%20x%20LSST%20DP2/crossmatch_report_dia_obj.html)
+  - [05b - DESI x LSST DP2 object](https://olivialynn.github.io/DESI-Crossmatch-Project/05%20-%20DESI%20x%20LSST%20DP2/crossmatch_report_object.html)
 
 ---
 
